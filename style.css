@@ -158,6 +158,7 @@ p {
 
 .section__container {
   max-width: 1200px;
+  margin: auto;
 }
 
 /* About */
@@ -262,6 +263,10 @@ p {
 }
 
 /* Work */
+#work {
+  padding-right: 0;
+  padding-left: 0;
+}
 .work__categories {
   margin: 40px;
 }
@@ -306,6 +311,9 @@ p {
   height: 250px;
   margin: 2px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project__img {
   max-width: 100%;
