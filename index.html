@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sookyeong's Portfolio</title>
+    <title>이수경 프론트엔드 개발자 포트폴리오 | Frontend Developer Sookyeong Lee Portfolio</title>
     <meta name="description" content="Portfolio for world-renowned software engineer Sookyeong">
     <meta name="author" content="Sookyeong">
     <link rel="icon" type="image/png" href="imgs/favicon.png">
@@ -16,15 +16,14 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
+            <i class="fas fa-globe"></i>
             <a href="#">Sookyeong</a>
         </div>
         <ul class="navbar__menu">
             <li class="navbar__menu__item active" data-link="#home">Home</li>
             <li class="navbar__menu__item" data-link="#about">About</li>
             <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">My work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+            <li class="navbar__menu__item" data-link="#work">Projects</li>
             <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
         <!-- Toggle button -->
@@ -36,51 +35,55 @@
     <section id="home">
         <div class="home__container">
             <img src="imgs/profile.jpg" alt="Sookyeong's profile photo" class="home__avatar">
-            <h1 class="home__title">Hello,<br>I'm Dream Coder</h1>
-            <h2 class="home__description">Front-end developer who likes to develop</h2>
+            <h1 class="home__title">Hi!<br>I'm Sookyeong Lee</h1>         
+            <h2 class="home__description">I am a passionate and challenging Front-end Developer who likes to develop</h2>
             <button class="home__contact">contact me</button>
         </div>
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus rem sequi? Nihil, est impedit dignissimos consequatur totam, odit deserunt doloremque laudantium similique corrupti, iusto optio rerum in deleniti officia.</p>
+        <p class="about__description">
+            동료들과 함께 서로의 강점을 모아 성공적인 결과를 만드는 것에 대해서 기쁨을 느낍니다. <br>
+            몰라도 부딪히고 시도하면서 배우는 걸 좋아합니다. <br>
+            개발을 좋아하고 유지보수와 읽기 쉬운 코드를 작성하기 위해서 노력합니다.
+        </p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
                 <h2 class="major__title">Front-end</h2>
-                <div class="major__description">HTML, CSS, JavaScript, TypeScript,<br>React, Vue, Web APIs</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-mobile"></i>
-                </div>               
-                <h2 class="major__title">Mobile</h2>
-                <div class="major__description">Android, iOS, React Native, Flutter,<br>Java, Swift, Kotlin</div>
+                <div class="major__description">HTML, CSS, JavaScript, Web APIs</div>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i class="fas fa-server"></i>
                 </div>               
                 <h2 class="major__title">Back-end</h2>
-                <div class="major__description">Java, JavaScript, Go, NodeJS,<br>Rest APIs, GraphGL</div>
+                <div class="major__description">Java, JavaScript, Spring</div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>               
+                <h2 class="major__title">Design</h2>
+                <div class="major__description"></div>
             </div>
         </div>
         <div class="about__jobs">
             <div class="job">
-                <img src="imgs/jobs/samsung.png" alt="samsung" class="job__logo">
+                <img src="imgs/jobs/inu.png" alt="university" class="job__logo university">
                 <div class="job__description">
-                    <p class="job__name">Currently working at Samsung as Software Engineer</p>
-                    <p class="job__period">2019 Sept - Until now</p>
+                    <p class="job__name">생명과학 학사 - 인천대학교</p>
+                    <p class="job__period">2014.03 ~ 2020.02</p>
                 </div>
             </div>
             <div class="job">
-                <img src="imgs/jobs/samsung.png" alt="samsung" class="job__logo">
+                <img src="imgs/jobs/myeongshin.jpg" alt="highschool" class="job__logo">
                 <div class="job__description">
-                    <p class="job__name">Currently working at Samsung as Software Engineer</p>
-                    <p class="job__period">2019 Sept - Until now</p>
+                    <p class="job__name">명신여자고등학교</p>
+                    <p class="job__period">2011.03 ~ 2014.02</p>
                 </div>
             </div>
         </div>
@@ -90,19 +93,19 @@
         <div class="section__container">
             <h1>Skills</h1>
             <h2>Skills & Attributes</h2>
-            <p>
+            <!-- <p>
                 Experience with all phases of the software life-cycle. Passion for learning new technologies. Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.
-            </p>
+            </p> -->
             <div class="skillset">
                 <div class="skillset__left">
                     <h3 class="skillset__title">Skills</h3>
                     <div class="skill">
                         <div class="skill__description">
                             <span>HTML</span>
-                            <span>99%</span>
+                            <span>90%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width:99%;"></div>
+                            <div class="skill__value" style="width:90%;"></div>
                         </div>
                     </div>
                     <div class="skill">
@@ -116,16 +119,7 @@
                     </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>JAVASCRIPT</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width:90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>TYPESCRIPT</span>
+                            <span>JavaScript</span>
                             <span>80%</span>
                         </div>
                         <div class="skill__bar">
@@ -134,20 +128,29 @@
                     </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>REACT</span>
-                            <span>88%</span>
+                            <span>Java / JSP</span>
+                            <span>50%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width:88%;"></div>
+                            <div class="skill__value" style="width:50%;"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>NODEJS</span>
-                            <span>77%</span>
+                            <span>Spring</span>
+                            <span>40%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width:77%;"></div>
+                            <div class="skill__value" style="width:40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>UI Design</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:60%;"></div>
                         </div>
                     </div>
                 </div>
@@ -156,18 +159,15 @@
                         <h3 class="skillset__title">Tools</h3>
                         <ul class="tools__list">
                             <li><span>Visual Studio Code</span></li>
-                            <li><span>Atom</span></li>
                             <li><span>eclipse</span></li>
-                            <li><span>Sketch app</span></li>
-                            <li><span>Android development tools</span></li> 
+                            <li><span>Atom</span></li>                            
                         </ul>
                     </div>
                     <div class="etc">
                         <h3 class="skillset__title">Etc</h3>
                         <ul class="etc__list">
                             <li><span>Git</span></li>
-                            <li><span>Math</span></li>
-                            <li><span>Design</span></li>
+                            <li><span>Math</span></li>                            
                         </ul>
                     </div>
                 </div>
@@ -176,75 +176,54 @@
     </section>
     <!-- Work -->
     <section id="work" class="section section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
+        <h1>Projects</h1>
         <div class="work__categories">
-            <button class="category__btn selected" data-filter="*">All<span class="category__count">8</span></button>
-            <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">4</span></button>
-            <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">2</span></button>
-            <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">2</span></button>
+            <button class="category__btn selected" data-filter="*">All<span class="category__count">5</span></button>
+            <button class="category__btn" data-filter="*">Front-end<span class="category__count">5</span></button>
+            <button class="category__btn" data-filter="design">Back-end<span class="category__count">2</span></button>
+            <button class="category__btn" data-filter="design">Design<span class="category__count">2</span></button>
         </div>
         <div class="work__projects">
-            <a href="" class="project" target="blank" data-type="front-end">
+            <a href="https://github.com/SookyeongLee/Mohel" class="project" target="blank" data-type="design">
                 <img src="imgs/projects/project1.png" alt="Youtube" class="project__img">
                 <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML, CSS</span>
+                    <h3>Mohel(모헬: 모두의 헬퍼)</h3>
+                    <span>팀프로젝트 : 온라인 역경매 플랫폼</span>
                 </div>
             </a>
-            <a href="https://github.com/" class="project" target="blank" data-type="front-end">
+            <a href="https://github.com/SookyeongLee/browser-study" class="project" target="blank" data-type="front-end">
                 <img src="imgs/projects/project2.png" alt="navbar" class="project__img">
                 <div class="project__description">
-                    <h3>Responsive Navbar</h3>
+                    <h3>Shopping cart items</h3>
+                    <span>HTML, CSS, JavaScript</span>
+                </div>
+            </a>
+            <a href="https://github.com/SookyeongLee/online-store" class="project" target="blank" data-type="design">
+                <img src="imgs/projects/project3.png" alt="navbar" class="project__img">
+                <div class="project__description">
+                    <h3>Online store</h3>
+                    <span>팀프로젝트 : 온라인 쇼핑몰</span>
+                </div>
+            </a>
+            <a href="https://github.com/SookyeongLee/youtube-site" class="project" target="blank" data-type="front-end">
+                <img src="imgs/projects/project4.png" alt="Project" class="project__img">
+                <div class="project__description">
+                    <h3>Youtube site clone coding</h3>
                     <span>HTML, CSS with media query</span>
                 </div>
             </a>
-            <a href="https://github.com/" class="project" target="blank" data-type="front-end">
-                <img src="imgs/projects/project3.png" alt="navbar" class="project__img">
-                <div class="project__description">
-                    <h3>Shopping mall game</h3>
-                    <span>HTML, CSS, JavaScript, Json</span>
-                </div>
-            </a>
-            <a href="https://github.com/" class="project" target="blank" data-type="mobile">
-                <img src="imgs/projects/project4.png" alt="Project" class="project__img">
-                <div class="project__description">
-                    <h3>Explanation</h3>
-                    <span>Explanation</span>
-                </div>
-            </a>
-            <a href="https://github.com/" class="project" target="blank" data-type="back-end">
+            <a href="https://github.com/SookyeongLee/mini-clothes-shop" class="project" target="blank" data-type="front-end">
                 <img src="imgs/projects/project5.png" alt="Project" class="project__img">
                 <div class="project__description">
-                    <h3>Explanation</h3>
-                    <span>Explanation</span>
-                </div>
-            </a>
-            <a href="https://github.com/" class="project" target="blank" data-type="mobile">
-                <img src="imgs/projects/project6.png" alt="Project" class="project__img">
-                <div class="project__description">
-                    <h3>Explanation</h3>
-                    <span>Explanation</span>
-                </div>
-            </a>
-            <a href="https://github.com/" class="project" target="blank" data-type="front-end">
-                <img src="imgs/projects/project7.png" alt="Project" class="project__img">
-                <div class="project__description">
-                    <h3>Explanation</h3>
-                    <span>Explanation</span>
-                </div>
-            </a>
-            <a href="https://github.com/" class="project" target="blank" data-type="back-end">
-                <img src="imgs/projects/project8.png" alt="Project" class="project__img">
-                <div class="project__description">
-                    <h3>Explanation</h3>
-                    <span>Explanation</span>
+                    <h3>Mini clothes shop</h3>
+                    <span>HTML, CSS, JavaScript, Json</span>
                 </div>
             </a>
         </div>
     </section>
+
     <!-- Testimonials -->
-    <section id="testimonials" class="section">
+    <!-- <section id="testimonials" class="section">
         <div class="section__container">
             <h1>Testimonials</h1>
             <h3>See what they say about me</h3>
@@ -270,20 +249,21 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
     <!-- Contact -->
     <footer id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
+        <h1 class="contact__title">Contact</h1>
         <h2 class="contact__email">dltnryd613@gmail.com</h2>
         <div class="contact__links">
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/SookyeongLee" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-linkedin"></i>
+            <a href="mailto:dltnryd613@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
             </a>
         </div>
-        <p class="contact__rights">2020 Dream coding Sookyeong - All rights reserved</p>
+        <p class="contact__rights">Copyright © 2020 | All rights reserved. | Sookyeong Lee</p>
     </footer>
     <!-- Arrow up -->
     <button class="arrow-up">

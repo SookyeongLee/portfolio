@@ -5,14 +5,14 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-orange: #ef8535;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-beige: #e3b698;
+  --color-yellow: #f9f7dc;
+  --color-dark-yellow: #ffcb65;
+  --color-pink: #fe918d;
   --color-black: #000000;
 
   /* Font size */
@@ -21,6 +21,7 @@
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
+  --font-nano: 12px;
 
   /* Font weight */
   --weight-bold: 700;
@@ -107,7 +108,7 @@ p {
   z-index: 1;
 }
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
   padding: 8px;
 }
 .navbar__logo {
@@ -126,7 +127,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-yellow);
   border-color: var(--color-white);
 }
 
@@ -167,7 +168,7 @@ p {
   text-transform: uppercase;
 }
 .home__contact:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-dark-yellow);
 }
 .section {
   text-align: center;
@@ -180,6 +181,9 @@ p {
 }
 
 /* About */
+.about__description {
+  line-height: 30px;
+}
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -190,16 +194,16 @@ p {
   height: 170px;
   line-height: 170px;
   font-size: 70px;
-  border: 1px solid var(--color-blue);
+  border: 1px solid var(--color-beige);
   border-radius: 50%;
   margin: auto;
   margin-bottom: 16px;
-  color: var(--color-blue);
+  color: var(--color-beige);
 }
 
 .major__icon:hover i {
   transform: rotate(-30deg) scale(1.1);
-  color: var(--color-pink);
+  color: var(--color-orange);
 }
 
 .major__icon i {
@@ -218,10 +222,14 @@ p {
 .job {
   display: flex;
   align-items: center;
+  padding: 16px 0;
 }
 .job__logo {
   width: 50px;
   height: 50px;
+}
+.university {
+  height: 29px;
 }
 .job__description {
   text-align: left;
@@ -229,10 +237,10 @@ p {
   margin: 0 16px;
 }
 .job__name {
-  font-size: var(--font-small);
+  font-size: var(--font-micro);
 }
 .job__period {
-  font-size: var(--font-micro);
+  font-size: var(--font-nano);
 }
 
 /* Skills */
@@ -267,17 +275,21 @@ p {
 }
 .skill__value {
   height: 3px;
-  background-color: var(--color-orange);
+  background-color: var(--color-pink);
 }
 .skillset__right {
   flex-basis: 40%;
 }
 .tools,
 .etc {
-  padding: 20px;
+  padding: 36px;
 }
 .tools {
   background-color: var(--color-grey);
+  height: 55%;
+}
+.etc {
+  height: 45%;
 }
 
 /* Work */
@@ -296,7 +308,7 @@ p {
   position: relative;
 }
 .category__count {
-  background-color: var(--color-orange);
+  background-color: var(--color-dark-yellow);
   color: var(--color-white);
   width: 24px;
   height: 24px;
@@ -311,7 +323,7 @@ p {
 }
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
   color: var(--color-white);
 }
 .category__btn.selected .category__count,
@@ -362,7 +374,7 @@ p {
   transition: all var(--annimation-duration) ease-in;
 }
 .project__description h3 {
-  color: var(--color-orange);
+  color: var(--color-pink);
 }
 .project__description h3:after {
   content: "";
@@ -410,12 +422,12 @@ p {
   color: var(--color-grey);
 }
 .testimonial__speech-bubble a {
-  color: var(--color-pink);
+  color: var(--color-orange);
 }
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
 }
 .contact__title,
 .contact__email,
@@ -434,7 +446,7 @@ p {
 }
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-yellow);
+  color: var(--color-dark-yellow);
 }
 /* Scroll */
 .arrow-up {
@@ -443,7 +455,7 @@ p {
   bottom: 50px;
   font-size: 50px;
   color: var(--color-white);
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -472,7 +484,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-pink);
+    background-color: var(--color-orange);
   }
   #navbar.navbar--dark {
     padding: 16px;
@@ -523,5 +535,12 @@ p {
   }
   .testimonial__speech-bubble {
     order: 1;
+  }
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    right: 16px;
+    bottom: 16px;
   }
 }
