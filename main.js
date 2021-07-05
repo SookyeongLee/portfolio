@@ -97,4 +97,24 @@ function scrollIntoView(selector){
 }
 
 
+const sections = document.querySelectorAll('.section');
+console.log(sections);
 
+const options = {
+    root: null, //viewport
+    rootMargin: '0px',
+    threshold: 0.7 //0~1 (100%) 
+};
+const callback = (entries, observer) => {
+    entries.forEach(entry => {
+        const id = entry.target.id;
+        if(entry.isIntersecting) {
+            document.querySelector(`li[data-link='#${id}']`).style = "border-color: white;";
+        } else {
+            document.querySelector(`li[data-link='#${id}']`).style = "border: none;";
+        }
+    });
+};
+const observer = new IntersectionObserver(callback, options);
+
+sections.forEach(section => observer.observe(section));
